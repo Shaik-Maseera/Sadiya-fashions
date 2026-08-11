@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Sadiya Fashions</title>
+<meta name="description" content="Sadiya Fashions is a multi-brand fashion destination bringing modern Korean and Chinese inspired styles to contemporary menswear.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="announce">
+  <div class="announce-track">
+    <span>FREE SHIPPING ON ORDERS ABOVE ₹999</span><span>EASY RETURNS</span><span>NEW STYLES EVERY WEEK</span>
+    <span>FREE SHIPPING ON ORDERS ABOVE ₹999</span><span>EASY RETURNS</span><span>NEW STYLES EVERY WEEK</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">SADIYA<span>·</span>FASHIONS</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html?sort=newest">New Arrivals</a>
+      <a href="shop.html#collections">Collections</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" data-open-search aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="icon-btn" href="wishlist.html" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C0.2 8 2 4 6 4c2.2 0 3.8 1.2 6 4 2.2-2.8 3.8-4 6-4 4 0 5.8 4 4 7.7C19.5 16.4 12 21 12 21z"/></svg>
+        <span class="badge-count" data-wishlist-count style="display:none;">0</span>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 7h15l-1.5 9h-12z"/><path d="M6 7L4.5 3H2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg>
+        <span class="badge-count" data-cart-count style="display:none;">0</span>
+      </a>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="overlay"></div>
+<div class="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav-head"><span class="logo">SADIYA</span><button class="mobile-nav-close" aria-label="Close menu">✕</button></div>
+  <nav>
+    <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="shop.html?sort=newest">New Arrivals</a>
+    <a href="shop.html#collections">Collections</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </nav>
+</div>
+<div class="search-overlay">
+  <button class="search-close" aria-label="Close search">✕</button>
+  <div class="search-box">
+    <div class="eyebrow" style="color:var(--gold-soft);">Search the Collection</div>
+    <input type="text" placeholder="Search products, brands, categories…" aria-label="Search products">
+    <div class="search-results"></div>
+  </div>
+</div>
+
+<section class="about-hero">
+  <div class="container">
+    <span class="eyebrow" style="justify-content:center;">Our Story</span>
+    <h1 class="display-xl" style="margin-top:14px;">MULTI-BRAND.<br>MULTI-CULTURE.</h1>
+    <p>Sadiya Fashions is a multi-brand fashion destination bringing modern Korean and Chinese inspired styles and contemporary menswear to your everyday wardrobe.</p>
+  </div>
+</section>
+
+<section class="editorial-split">
+  <img src="https://placehold.co/1200x1500/121110/F6F2E9?text=Our+Story" alt="Editorial photograph representing the Sadiya Fashions story">
+  <div class="editorial-copy">
+    <span class="eyebrow">Our Story</span>
+    <h2 class="display-lg">Built On Curation, Not Mass Production</h2>
+    <p class="serif-quote">"We started Sadiya Fashions because Seoul and Shanghai's street style rarely made it to our shelves — so we built the shelf ourselves."</p>
+    <p>What began as a small edit of Korean and Chinese inspired essentials has grown into a full multi-brand destination for men who want their wardrobe to say something. We work with independent labels who share our obsession with cut, fabric and finishing — never chasing trends for their own sake.</p>
+  </div>
+</section>
+
+<section class="editorial-split" style="direction:rtl;">
+  <img style="direction:ltr;" src="https://placehold.co/1200x1500/29271F/F6F2E9?text=Our+Style" alt="Editorial photograph representing the Sadiya Fashions style direction">
+  <div class="editorial-copy" style="direction:ltr;">
+    <span class="eyebrow">Our Style</span>
+    <h2 class="display-lg">Oversized. Editorial. Unbothered.</h2>
+    <p>Dropped shoulders, boxy tees, wide-leg trousers and clean minimal palettes — our style direction takes cues from Seoul's Seongsu-dong studios and Shanghai's gallery-district street style, filtered for the everyday.</p>
+    <p>Black, white, cream, charcoal and beige form our core palette, finished with the occasional flash of muted gold — because true style doesn't need to shout.</p>
+  </div>
+</section>
+
+<section class="cat-section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Our Brands</span>
+        <h2 class="display-lg">The Labels We Carry</h2>
+      </div>
+    </div>
+    <div class="philosophy-grid" id="brand-grid" style="margin:0;"></div>
+  </div>
+</section>
+
+<section class="cat-section" style="padding-top:0;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Quality &amp; Philosophy</span>
+        <h2 class="display-lg">What We Stand For</h2>
+      </div>
+    </div>
+    <div class="philosophy-grid">
+      <div class="philosophy-card">
+        <div class="num">01</div>
+        <h3>Quality First</h3>
+        <p>Every style is chosen for its fabric weight, construction and finishing — built to outlast a single season.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="num">02</div>
+        <h3>Considered Curation</h3>
+        <p>We don't stock everything — we stock what's worth wearing. Every drop is edited down to the pieces we'd wear ourselves.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="num">03</div>
+        <h3>Fashion Philosophy</h3>
+        <p>Style without limits means dressing for yourself first. We build the wardrobe; you bring the statement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">SADIYA<span>·</span>FASHIONS</a>
+        <p>A multi-brand fashion destination bringing modern Korean and Chinese inspired menswear to your everyday wardrobe.</p>
+        <div class="footer-social">
+          <a class="icon-btn btn-ghost" href="#" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+          <a class="icon-btn btn-ghost" href="#" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+          <a class="icon-btn btn-ghost" href="#" aria-label="WhatsApp" target="_blank" rel="noopener">WA</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="shop.html">All Products</a><a href="shop.html?sort=newest">New Arrivals</a>
+        <a href="shop.html?category=T-Shirts">T-Shirts</a><a href="shop.html?category=Hoodies">Hoodies</a>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Care</h4>
+        <a href="contact.html">Contact Us</a><a href="contact.html">Shipping Info</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sadiya Fashions. All rights reserved.</span>
+      <span>Designed for the Korean &amp; Chinese inspired streetwear generation.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/wishlist.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const grid = document.getElementById("brand-grid");
+    const descriptions = {
+      "Hanlim Atelier": "Seoul-rooted tailoring with an oversized, editorial edge.",
+      "Blanc Seoul": "Minimal essentials in soft, considered neutrals.",
+      "Lóng Wear": "Bold Shanghai street-graphics and utility silhouettes.",
+      "Studio Mù": "Quiet, structured pieces built around drape and texture."
+    };
+    grid.innerHTML = getBrands().map((b, i) => `
+      <div class="philosophy-card">
+        <div class="num">0${i + 1}</div>
+        <h3>${b}</h3>
+        <p>${descriptions[b] || "A curated label in the Sadiya Fashions multi-brand edit."}</p>
+      </div>`).join("");
+  });
+</script>
+</body>
+</html>

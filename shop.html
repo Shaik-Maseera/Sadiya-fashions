@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop All Products | Sadiya Fashions</title>
+<meta name="description" content="Shop the full Sadiya Fashions collection — Korean and Chinese inspired men's t-shirts, shirts, denim, hoodies, jackets, co-ords and accessories.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="announce">
+  <div class="announce-track">
+    <span>FREE SHIPPING ON ORDERS ABOVE ₹999</span>
+    <span>EASY RETURNS</span>
+    <span>NEW STYLES EVERY WEEK</span>
+    <span>FREE SHIPPING ON ORDERS ABOVE ₹999</span>
+    <span>EASY RETURNS</span>
+    <span>NEW STYLES EVERY WEEK</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">SADIYA<span>·</span>FASHIONS</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="shop.html?sort=newest">New Arrivals</a>
+      <a href="shop.html#collections">Collections</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" data-open-search aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="icon-btn" href="wishlist.html" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C0.2 8 2 4 6 4c2.2 0 3.8 1.2 6 4 2.2-2.8 3.8-4 6-4 4 0 5.8 4 4 7.7C19.5 16.4 12 21 12 21z"/></svg>
+        <span class="badge-count" data-wishlist-count style="display:none;">0</span>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 7h15l-1.5 9h-12z"/><path d="M6 7L4.5 3H2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg>
+        <span class="badge-count" data-cart-count style="display:none;">0</span>
+      </a>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="overlay"></div>
+
+<div class="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav-head">
+    <span class="logo">SADIYA</span>
+    <button class="mobile-nav-close" aria-label="Close menu">✕</button>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="shop.html?sort=newest">New Arrivals</a>
+    <a href="shop.html#collections">Collections</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="mobile-nav-foot">Korean-inspired. Contemporary. Made for your statement.</div>
+</div>
+
+<div class="search-overlay">
+  <button class="search-close" aria-label="Close search">✕</button>
+  <div class="search-box">
+    <div class="eyebrow" style="color:var(--gold-soft);">Search the Collection</div>
+    <input type="text" placeholder="Search products, brands, categories…" aria-label="Search products">
+    <div class="search-results"></div>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span>Shop</div>
+    <h1 class="display-lg">The Full Collection</h1>
+  </div>
+</section>
+
+<div class="container">
+  <div class="shop-layout">
+
+    <aside class="filters-panel" id="filters-panel">
+      <div class="filters-close">
+        <button class="btn-icon" id="close-filters" aria-label="Close filters">✕</button>
+      </div>
+
+      <div class="filter-group">
+        <h4>Category <span class="chev">▾</span></h4>
+        <div class="filter-body" id="filter-category"></div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Brand <span class="chev">▾</span></h4>
+        <div class="filter-body" id="filter-brand"></div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Price <span class="chev">▾</span></h4>
+        <div class="filter-body">
+          <div class="price-range-row">
+            <span>₹0</span>
+            <input type="range" id="filter-price" min="0" max="4500" step="100" value="4500">
+            <span id="filter-price-val">₹4500</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Size <span class="chev">▾</span></h4>
+        <div class="filter-body">
+          <div class="size-chip-row" id="filter-size"></div>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Colour <span class="chev">▾</span></h4>
+        <div class="filter-body">
+          <div class="swatch-row" id="filter-color"></div>
+        </div>
+      </div>
+
+      <button class="clear-filters" id="clear-all-filters">Clear all filters</button>
+    </aside>
+
+    <div>
+      <div class="shop-toolbar">
+        <span class="result-count" id="result-count">Showing 30 products</span>
+        <div class="toolbar-right">
+          <button class="btn btn-outline btn-sm mobile-filter-btn" id="open-filters">Filters</button>
+          <select class="select-sort" id="sort-select">
+            <option value="featured">Sort: Featured</option>
+            <option value="newest">Sort: Newest</option>
+            <option value="price-asc">Sort: Price Low → High</option>
+            <option value="price-desc">Sort: Price High → Low</option>
+            <option value="rating">Sort: Highest Rated</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-grid" id="shop-grid"></div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">SADIYA<span>·</span>FASHIONS</a>
+        <p>A multi-brand fashion destination bringing modern Korean and Chinese inspired menswear to your everyday wardrobe.</p>
+        <div class="footer-social">
+          <a class="icon-btn btn-ghost" href="#" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+          <a class="icon-btn btn-ghost" href="#" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+          <a class="icon-btn btn-ghost" href="#" aria-label="WhatsApp" target="_blank" rel="noopener">WA</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="shop.html">All Products</a>
+        <a href="shop.html?sort=newest">New Arrivals</a>
+        <a href="shop.html?category=T-Shirts">T-Shirts</a>
+        <a href="shop.html?category=Hoodies">Hoodies</a>
+        <a href="shop.html?category=Jackets">Jackets</a>
+        <a href="shop.html?category=Accessories">Accessories</a>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Care</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Shipping Info</a>
+        <a href="contact.html">Returns</a>
+        <a href="contact.html">Size Guide</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="about.html">About Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sadiya Fashions. All rights reserved.</span>
+      <span>Designed for the Korean &amp; Chinese inspired streetwear generation.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/wishlist.js"></script>
+<script>
+(function () {
+  const COLOR_HEX = {
+    Black:"#151414", White:"#F6F2E9", Grey:"#8B8880", Charcoal:"#29271F", Beige:"#D9CBA9",
+    Cream:"#EFE6D3", "Sky Blue":"#A9C4D6", Blue:"#3A5A78", "Washed Blue":"#6C8AA3",
+    Olive:"#6B6B44", Brown:"#5C4632"
+  };
+
+  const state = {
+    search: "",
+    category: null,
+    brands: [],
+    sizes: [],
+    colors: [],
+    maxPrice: 4500,
+    sort: "featured"
+  };
+
+  function readParams() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("category")) state.category = params.get("category");
+    if (params.get("sort")) state.sort = params.get("sort");
+    if (params.get("q")) state.search = params.get("q");
+  }
+
+  function buildFilterUI() {
+    const catBody = document.getElementById("filter-category");
+    catBody.innerHTML = getCategories().map(cat => {
+      const count = getAllProducts().filter(p => p.category === cat).length;
+      return `<label class="filter-option"><input type="checkbox" value="${cat}" class="cat-check" ${state.category === cat ? "checked" : ""}> ${cat} <span class="cnt">${count}</span></label>`;
+    }).join("");
+
+    const brandBody = document.getElementById("filter-brand");
+    brandBody.innerHTML = getBrands().map(brand => {
+      const count = getAllProducts().filter(p => p.brand === brand).length;
+      return `<label class="filter-option"><input type="checkbox" value="${brand}" class="brand-check"> ${brand} <span class="cnt">${count}</span></label>`;
+    }).join("");
+
+    const sizes = Array.from(new Set(getAllProducts().flatMap(p => p.sizes))).filter(s => s !== "One Size");
+    document.getElementById("filter-size").innerHTML = sizes.map(s =>
+      `<button type="button" class="size-chip" data-size="${s}">${s}</button>`
+    ).join("");
+
+    const colors = Array.from(new Set(getAllProducts().flatMap(p => p.colors)));
+    document.getElementById("filter-color").innerHTML = colors.map(c =>
+      `<button type="button" class="swatch" data-color="${c}" style="background:${COLOR_HEX[c] || '#ccc'}" title="${c}" aria-label="${c}"></button>`
+    ).join("");
+
+    document.querySelectorAll(".cat-check").forEach(cb => cb.addEventListener("change", () => {
+      document.querySelectorAll(".cat-check").forEach(other => { if (other !== cb) other.checked = false; });
+      state.category = cb.checked ? cb.value : null;
+      applyAndRender();
+    }));
+    document.querySelectorAll(".brand-check").forEach(cb => cb.addEventListener("change", () => {
+      state.brands = Array.from(document.querySelectorAll(".brand-check:checked")).map(el => el.value);
+      applyAndRender();
+    }));
+    document.querySelectorAll("#filter-size .size-chip").forEach(chip => chip.addEventListener("click", () => {
+      chip.classList.toggle("selected");
+      state.sizes = Array.from(document.querySelectorAll("#filter-size .size-chip.selected")).map(el => el.dataset.size);
+      applyAndRender();
+    }));
+    document.querySelectorAll("#filter-color .swatch").forEach(sw => sw.addEventListener("click", () => {
+      sw.classList.toggle("selected");
+      state.colors = Array.from(document.querySelectorAll("#filter-color .swatch.selected")).map(el => el.dataset.color);
+      applyAndRender();
+    }));
+
+    const priceInput = document.getElementById("filter-price");
+    priceInput.addEventListener("input", () => {
+      state.maxPrice = Number(priceInput.value);
+      document.getElementById("filter-price-val").textContent = "₹" + state.maxPrice;
+      applyAndRender();
+    });
+
+    document.getElementById("sort-select").value = state.sort;
+    document.getElementById("sort-select").addEventListener("change", e => {
+      state.sort = e.target.value;
+      applyAndRender();
+    });
+
+    document.getElementById("clear-all-filters").addEventListener("click", () => {
+      state.category = null; state.brands = []; state.sizes = []; state.colors = []; state.maxPrice = 4500; state.search = "";
+      document.querySelectorAll(".cat-check, .brand-check").forEach(cb => cb.checked = false);
+      document.querySelectorAll(".size-chip.selected, .swatch.selected").forEach(el => el.classList.remove("selected"));
+      document.getElementById("filter-price").value = 4500;
+      document.getElementById("filter-price-val").textContent = "₹4500";
+      applyAndRender();
+    });
+
+    document.getElementById("open-filters").addEventListener("click", () => {
+      document.getElementById("filters-panel").classList.add("open");
+      document.querySelector(".overlay").classList.add("show");
+    });
+    document.getElementById("close-filters").addEventListener("click", closeFiltersPanel);
+
+    document.querySelectorAll(".filter-group h4").forEach(h => h.addEventListener("click", () => {
+      h.closest(".filter-group").classList.toggle("collapsed");
+    }));
+  }
+
+  function getFiltered() {
+    let list = getAllProducts();
+    if (state.category) list = list.filter(p => p.category === state.category);
+    if (state.brands.length) list = list.filter(p => state.brands.includes(p.brand));
+    if (state.sizes.length) list = list.filter(p => p.sizes.some(s => state.sizes.includes(s)));
+    if (state.colors.length) list = list.filter(p => p.colors.some(c => state.colors.includes(c)));
+    list = list.filter(p => p.price <= state.maxPrice);
+    if (state.search) {
+      const q = state.search.toLowerCase();
+      list = list.filter(p =>
+        p.name.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q) ||
+        p.category.toLowerCase().includes(q) || p.description.toLowerCase().includes(q)
+      );
+    }
+
+    switch (state.sort) {
+      case "newest": list = [...list].sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded)); break;
+      case "price-asc": list = [...list].sort((a, b) => a.price - b.price); break;
+      case "price-desc": list = [...list].sort((a, b) => b.price - a.price); break;
+      case "rating": list = [...list].sort((a, b) => b.rating - a.rating); break;
+      default: break;
+    }
+    return list;
+  }
+
+  function applyAndRender() {
+    const list = getFiltered();
+    document.getElementById("result-count").textContent = `Showing ${list.length} product${list.length !== 1 ? "s" : ""}`;
+    renderProductGrid(document.getElementById("shop-grid"), list);
+    closeFiltersPanel();
+    document.querySelector(".overlay").classList.remove("show");
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    readParams();
+    buildFilterUI();
+    if (state.category) {
+      document.querySelectorAll(".cat-check").forEach(cb => { cb.checked = cb.value === state.category; });
+    }
+    applyAndRender();
+  });
+})();
+</script>
+</body>
+</html>
