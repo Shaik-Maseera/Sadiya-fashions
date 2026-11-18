@@ -1,43 +1,29 @@
+
 /* ==========================================================================
    SADIYA FASHIONS — Product Database
    Centralized product data used across every page.
-   Replace the `img()` calls with real photography paths (e.g. assets/images/..)
-   whenever you have final product shoots — see README notes at the bottom.
    ========================================================================== */
 
-/**
- * Builds a placeholder product image.
- * Swap this for real photography later: just change the `images` arrays
- * below to point at files inside /assets/images/.
- */
-function img(bg, label, fg) {
-  fg = fg || "F6F2E9";
-  const text = encodeURIComponent(label);
-  return `https://placehold.co/900x1200/${bg}/${fg}?text=${text}&font=raleway`;
-}
-
-const PALETTE_A = "29271F"; // charcoal
-const PALETTE_B = "DCD2BC"; // stone
-const PALETTE_C = "121110"; // ink
-const PALETTE_D = "AE9860"; // gold
-
 const products = [
+  // =====================================================
+  // T-SHIRTS — FIRST 6 PRODUCTS
+  // =====================================================
+
   {
     id: 1,
     name: "Korean Oversized Black T-Shirt",
     brand: "Hanlim Atelier",
     category: "T-Shirts",
-    price: 1299,
-    oldPrice: 1599,
-    discount: 19,
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
     rating: 4.8,
     reviews: 126,
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black"],
     description: "A heavyweight 260gsm cotton tee cut with a dropped shoulder and boxy oversized silhouette, straight off the Seoul streetwear playbook. Garment-washed for a broken-in feel from day one.",
-    // images: [img(PALETTE_C, "Hanlim+Atelier+01"), img(PALETTE_A, "Hanlim+Atelier+02")],
-    images: ["assets/images/t-shirt.jpeg"],
-    badge: "BESTSELLER",
+    images: ["assets/images/T-shirt1.jpeg"],
+    badge: "50% OFF",
     stock: 15,
     dateAdded: "2026-06-01"
   },
@@ -46,16 +32,16 @@ const products = [
     name: "Minimal White Graphic T-Shirt",
     brand: "Blanc Seoul",
     category: "T-Shirts",
-    price: 999,
-    oldPrice: 1299,
-    discount: 23,
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
     rating: 4.6,
     reviews: 84,
     sizes: ["S", "M", "L", "XL"],
     colors: ["White"],
     description: "Clean off-white tee with a minimal chest print and reinforced collar. Cut for a relaxed regular fit that layers well under overshirts.",
-    images: ["assets/images/t-shirt2.jpeg"],
-    badge: "NEW",
+    images: ["assets/images/T-shirt2.jpeg"],
+    badge: "50% OFF",
     stock: 22,
     dateAdded: "2026-07-14"
   },
@@ -64,16 +50,16 @@ const products = [
     name: "Seoul Streetwear Oversized Tee",
     brand: "Hanlim Atelier",
     category: "T-Shirts",
-    price: 1199,
-    oldPrice: 1499,
-    discount: 20,
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
     rating: 4.7,
     reviews: 61,
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Charcoal", "Black"],
     description: "Drop-shoulder streetwear tee with a raw-edge hem and back placement print inspired by Seoul's Seongsu-dong studios. Runs true to an oversized fit.",
-    images: ["assets/images/t-shirt3.jpeg"],
-    badge: "",
+    images: ["assets/images/T-shirt3.jpeg"],
+    badge: "50% OFF",
     stock: 18,
     dateAdded: "2026-05-20"
   },
@@ -82,16 +68,16 @@ const products = [
     name: "Premium Cream Boxy T-Shirt",
     brand: "Studio Mù",
     category: "T-Shirts",
-    price: 1099,
-    oldPrice: 0,
-    discount: 0,
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
     rating: 4.5,
     reviews: 39,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Cream"],
     description: "A boxy, structured tee in premium combed cotton with a subtle ribbed collar. Understated and versatile — the everyday foundation piece.",
-    images: ["assets/images/t-shirt4.jpeg"],
-    badge: "",
+    images: ["assets/images/T-shirt4.jpeg"],
+    badge: "50% OFF",
     stock: 30,
     dateAdded: "2026-04-11"
   },
@@ -100,17 +86,16 @@ const products = [
     name: "Chinese Street Style Graphic Tee",
     brand: "Lóng Wear",
     category: "T-Shirts",
-    price: 1349,
-    oldPrice: 1699,
-    discount: 21,
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
     rating: 4.9,
     reviews: 152,
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "Grey"],
     description: "Bold front graphic inspired by Shanghai gallery poster art, printed on a heavyweight oversized tee. A statement piece for the front row of the drop.",
-    // images: [img(PALETTE_C, "Long+Wear+01"), img(PALETTE_A, "Long+Wear+02")],
-    images: ["assets/images/img-2.jpeg"],
-    badge: "BESTSELLER",
+    images: ["assets/images/T-shirt5.jpeg"],
+    badge: "50% OFF",
     stock: 12,
     dateAdded: "2026-06-25"
   },
@@ -119,20 +104,24 @@ const products = [
     name: "Washed Grey Oversized Tee",
     brand: "Blanc Seoul",
     category: "T-Shirts",
-    price: 949,
-    oldPrice: 1199,
-    discount: 21,
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
     rating: 4.4,
     reviews: 47,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Grey"],
     description: "Pigment-washed for a faded, lived-in tone with a soft-hand finish. Dropped shoulders and a slightly cropped body length.",
-    // images: [img(PALETTE_B, "Washed+Grey+Tee+01", "121110"), img(PALETTE_A, "Washed+Grey+Tee+02")],
-    images: ["assets/images/t-shirt.jpeg"],
-    badge: "",
+    images: ["assets/images/T-shirt6.jpeg"],
+    badge: "50% OFF",
     stock: 25,
     dateAdded: "2026-03-02"
   },
+
+  // =====================================================
+  // SHIRTS
+  // =====================================================
+
   {
     id: 7,
     name: "Korean Relaxed Oxford Shirt",
@@ -146,7 +135,7 @@ const products = [
     sizes: ["S", "M", "L", "XL"],
     colors: ["White", "Sky Blue"],
     description: "Relaxed-fit oxford shirt in a soft cotton weave with a slightly longer hem for that off-duty Seoul menswear look. Works buttoned up or layered open.",
-    images: [img(PALETTE_B, "Oxford+Shirt+01", "121110"), img(PALETTE_D, "Oxford+Shirt+02", "121110")],
+    images: [],
     badge: "",
     stock: 20,
     dateAdded: "2026-05-05"
@@ -164,7 +153,7 @@ const products = [
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "Beige"],
     description: "Structured mandarin collar shirt with a clean placket and horn-style buttons — a modern nod to classic Chinese tailoring.",
-    images: [img(PALETTE_C, "Mandarin+Collar+01"), img(PALETTE_A, "Mandarin+Collar+02")],
+    images: [],
     badge: "NEW",
     stock: 16,
     dateAdded: "2026-07-20"
@@ -182,7 +171,7 @@ const products = [
     sizes: ["M", "L", "XL"],
     colors: ["Black"],
     description: "Boxy Cuban collar shirt in a lightweight viscose blend. Open-necked resort styling built for an oversized, effortless drape.",
-    images: [img(PALETTE_A, "Cuban+Collar+01"), img(PALETTE_C, "Cuban+Collar+02")],
+    images: [],
     badge: "",
     stock: 9,
     dateAdded: "2026-02-14"
@@ -200,11 +189,17 @@ const products = [
     sizes: ["S", "M", "L", "XL"],
     colors: ["Beige", "White"],
     description: "Breathable linen-cotton blend shirt with a relaxed camp collar. Built for warm days without giving up on tailoring.",
-    images: ["assets/images/t-shirt.jpeg"],
+    images: [],
     badge: "BESTSELLER",
     stock: 14,
     dateAdded: "2026-06-10"
   },
+
+  // =====================================================
+  // JEANS / HOODIES CATEGORY
+  // IMAGES LEFT EMPTY FOR NOW
+  // =====================================================
+
   {
     id: 11,
     name: "Korean Straight Fit Blue Jeans",
@@ -218,7 +213,7 @@ const products = [
     sizes: ["30", "32", "34", "36", "38"],
     colors: ["Blue"],
     description: "Mid-wash straight fit denim with a clean, tapered leg opening. Rigid selvedge-style construction that softens beautifully with wear.",
-    images: [img(PALETTE_C, "Straight+Jeans+01"), img(PALETTE_A, "Straight+Jeans+02")],
+    images: [],
     badge: "",
     stock: 21,
     dateAdded: "2026-04-28"
@@ -236,7 +231,7 @@ const products = [
     sizes: ["30", "32", "34", "36"],
     colors: ["Black"],
     description: "Sulphur-black denim in a relaxed fit with minimal fading for a clean, monochrome look. A streetwear staple that pairs with everything.",
-    images: [img(PALETTE_A, "Relaxed+Black+Denim+01"), img(PALETTE_C, "Relaxed+Black+Denim+02")],
+    images: [],
     badge: "",
     stock: 19,
     dateAdded: "2026-03-19"
@@ -254,7 +249,7 @@ const products = [
     sizes: ["30", "32", "34", "36"],
     colors: ["Washed Blue"],
     description: "Wide-leg silhouette in a vintage-washed denim with a dropped crotch for the exaggerated Korean streetwear drape.",
-    images: [img(PALETTE_B, "Wide+Leg+Jeans+01", "121110"), img(PALETTE_D, "Wide+Leg+Jeans+02", "121110")],
+    images: [],
     badge: "NEW",
     stock: 13,
     dateAdded: "2026-07-02"
@@ -272,299 +267,269 @@ const products = [
     sizes: ["30", "32", "34", "36", "38"],
     colors: ["Grey"],
     description: "Stonewashed grey denim with a soft broken-in hand feel and a tapered straight leg. Understated and easy to style.",
-    images: [img(PALETTE_A, "Vintage+Grey+Denim+01"), img(PALETTE_C, "Vintage+Grey+Denim+02")],
+    images: [],
     badge: "",
     stock: 17,
     dateAdded: "2026-01-30"
   },
-  // {
-  //   id: 15,
-  //   name: "Korean Wide Leg Trousers",
-  //   brand: "Blanc Seoul",
-  //   category: "Trousers",
-  //   price: 1899,
-  //   oldPrice: 2299,
-  //   discount: 17,
-  //   rating: 4.8,
-  //   reviews: 97,
-  //   sizes: ["S", "M", "L", "XL"],
-  //   colors: ["Black", "Charcoal"],
-  //   description: "Fluid wide-leg tailored trousers with a pressed centre crease. A cornerstone of the Korean minimalist wardrobe — smart or casual.",
-  //   images: [img(PALETTE_C, "Wide+Trousers+01"), img(PALETTE_A, "Wide+Trousers+02")],
-  //   badge: "BESTSELLER",
-  //   stock: 24,
-  //   dateAdded: "2026-05-15"
-  // },
-  // {
-  //   id: 16,
-  //   name: "Relaxed Beige Trousers",
-  //   brand: "Studio Mù",
-  //   category: "Trousers",
-  //   price: 1799,
-  //   oldPrice: 0,
-  //   discount: 0,
-  //   rating: 4.4,
-  //   reviews: 31,
-  //   sizes: ["S", "M", "L", "XL"],
-  //   colors: ["Beige"],
-  //   description: "Relaxed tapered trousers in soft cotton twill with an elasticated drawcord waist for all-day comfort.",
-  //   images: [img(PALETTE_B, "Beige+Trousers+01", "121110"), img(PALETTE_D, "Beige+Trousers+02", "121110")],
-  //   badge: "",
-  //   stock: 20,
-  //   dateAdded: "2026-02-27"
-  // },
-  // {
-  //   id: 17,
-  //   name: "Black Pleated Trousers",
-  //   brand: "Hanlim Atelier",
-  //   category: "Trousers",
-  //   price: 2199,
-  //   oldPrice: 2599,
-  //   discount: 15,
-  //   rating: 4.6,
-  //   reviews: 52,
-  //   sizes: ["S", "M", "L", "XL"],
-  //   colors: ["Black"],
-  //   description: "Double-pleated front trousers with a tailored drape, cut wide through the leg. Editorial-ready formalwear with a street edge.",
-  //   images: [img(PALETTE_A, "Pleated+Trousers+01"), img(PALETTE_C, "Pleated+Trousers+02")],
-  //   badge: "",
-  //   stock: 11,
-  //   dateAdded: "2026-06-18"
-  // },
-  // {
-  //   id: 18,
-  //   name: "Korean Cargo Trousers",
-  //   brand: "Lóng Wear",
-  //   category: "Cargo Pants",
-  //   price: 2099,
-  //   oldPrice: 2499,
-  //   discount: 16,
-  //   rating: 4.7,
-  //   reviews: 118,
-  //   sizes: ["S", "M", "L", "XL", "XXL"],
-  //   colors: ["Olive", "Black"],
-  //   description: "Multi-pocket cargo trousers with articulated knees and a tapered ankle. Utility detailing meets Seoul streetwear proportions.",
-  //   images: [img(PALETTE_C, "Cargo+Trousers+01"), img(PALETTE_A, "Cargo+Trousers+02")],
-  //   badge: "BESTSELLER",
-  //   stock: 27,
-  //   dateAdded: "2026-04-03"
-  // },
-  // {
-  //   id: 19,
-  //   name: "Oversized Black Hoodie",
-  //   brand: "Studio Mù",
-  //   category: "Hoodies",
-  //   price: 1999,
-  //   oldPrice: 2499,
-  //   discount: 20,
-  //   rating: 4.9,
-  //   reviews: 203,
-  //   sizes: ["S", "M", "L", "XL", "XXL"],
-  //   colors: ["Black"],
-  //   description: "Heavyweight 400gsm fleece hoodie with an oversized dropped shoulder and kangaroo pocket. The everyday layer built to last seasons.",
-  //   images: [img(PALETTE_A, "Black+Hoodie+01"), img(PALETTE_C, "Black+Hoodie+02")],
-  //   badge: "BESTSELLER",
-  //   stock: 31,
-  //   dateAdded: "2026-05-29"
-  // },
-  // {
-  //   id: 20,
-  //   name: "Cream Minimal Hoodie",
-  //   brand: "Blanc Seoul",
-  //   category: "Hoodies",
-  //   price: 1899,
-  //   oldPrice: 0,
-  //   discount: 0,
-  //   rating: 4.5,
-  //   reviews: 58,
-  //   sizes: ["S", "M", "L", "XL"],
-  //   colors: ["Cream"],
-  //   description: "Minimal cream hoodie in brushed-back fleece with a clean chest wordmark. Soft, warm and endlessly wearable.",
-  //   images: [img(PALETTE_B, "Cream+Hoodie+01", "121110"), img(PALETTE_D, "Cream+Hoodie+02", "121110")],
-  //   badge: "NEW",
-  //   stock: 18,
-  //   dateAdded: "2026-07-25"
-  // },
-  // {
-  //   id: 21,
-  //   name: "Korean Graphic Hoodie",
-  //   brand: "Hanlim Atelier",
-  //   category: "Hoodies",
-  //   price: 2199,
-  //   oldPrice: 2699,
-  //   discount: 19,
-  //   rating: 4.7,
-  //   reviews: 76,
-  //   sizes: ["S", "M", "L", "XL", "XXL"],
-  //   colors: ["Charcoal"],
-  //   description: "Statement back-print hoodie with dropped shoulders and ribbed cuffs, designed with Seongsu-dong studio artwork.",
-  //   images: [img(PALETTE_A, "Graphic+Hoodie+01"), img(PALETTE_C, "Graphic+Hoodie+02")],
-  //   badge: "",
-  //   stock: 15,
-  //   dateAdded: "2026-03-11"
-  // },
-  // {
-  //   id: 22,
-  //   name: "Premium Bomber Jacket",
-  //   brand: "Lóng Wear",
-  //   category: "Jackets",
-  //   price: 3499,
-  //   oldPrice: 4299,
-  //   discount: 19,
-  //   rating: 4.8,
-  //   reviews: 64,
-  //   sizes: ["S", "M", "L", "XL"],
-  //   colors: ["Black", "Olive"],
-  //   description: "Classic bomber silhouette in a technical shell fabric with ribbed collar, cuffs and hem. Lined for cold-weather layering.",
-  //   images: [img(PALETTE_C, "Bomber+Jacket+01"), img(PALETTE_A, "Bomber+Jacket+02")],
-  //   badge: "LIMITED",
-  //   stock: 6,
-  //   dateAdded: "2026-06-05"
-  // },
-  // {
-  //   id: 23,
-  //   name: "Korean Denim Jacket",
-  //   brand: "Studio Mù",
-  //   category: "Jackets",
-  //   price: 2999,
-  //   oldPrice: 3599,
-  //   discount: 17,
-  //   rating: 4.6,
-  //   reviews: 41,
-  //   sizes: ["S", "M", "L", "XL"],
-  //   colors: ["Blue"],
-  //   description: "Boxy trucker jacket in rigid mid-wash denim with a dropped shoulder seam for the oversized Korean fit.",
-  //   images: [img(PALETTE_B, "Denim+Jacket+01", "121110"), img(PALETTE_D, "Denim+Jacket+02", "121110")],
-  //   badge: "",
-  //   stock: 10,
-  //   dateAdded: "2026-02-08"
-  // },
-  // {
-  //   id: 24,
-  //   name: "Oversized Utility Jacket",
-  //   brand: "Hanlim Atelier",
-  //   category: "Jackets",
-  //   price: 3199,
-  //   oldPrice: 0,
-  //   discount: 0,
-  //   rating: 4.4,
-  //   reviews: 22,
-  //   sizes: ["S", "M", "L", "XL", "XXL"],
-  //   colors: ["Olive", "Black"],
-  //   description: "Multi-pocket utility jacket in a washed cotton canvas with an oversized fit and adjustable drawcord hem.",
-  //   images: [img(PALETTE_A, "Utility+Jacket+01"), img(PALETTE_C, "Utility+Jacket+02")],
-  //   badge: "NEW",
-  //   stock: 12,
-  //   dateAdded: "2026-07-30"
-  // },
-  // {
-  //   id: 25,
-  //   name: "Black Streetwear Co-ord",
-  //   brand: "Lóng Wear",
-  //   category: "Co-ords",
-  //   price: 3299,
-  //   oldPrice: 3899,
-  //   discount: 15,
-  //   rating: 4.8,
-  //   reviews: 87,
-  //   sizes: ["S", "M", "L", "XL"],
-  //   colors: ["Black"],
-  //   description: "Matching oversized tee and relaxed shorts co-ord set in heavyweight jersey. Sold as a set for an instant head-to-toe look.",
-  //   images: [img(PALETTE_C, "Black+Coord+01"), img(PALETTE_A, "Black+Coord+02")],
-  //   badge: "BESTSELLER",
-  //   stock: 14,
-  //   dateAdded: "2026-05-08"
-  // },
-  // {
-  //   id: 26,
-  //   name: "Beige Summer Co-ord",
-  //   brand: "Blanc Seoul",
-  //   category: "Co-ords",
-  //   price: 2999,
-  //   oldPrice: 0,
-  //   discount: 0,
-  //   rating: 4.5,
-  //   reviews: 36,
-  //   sizes: ["S", "M", "L", "XL"],
-  //   colors: ["Beige"],
-  //   description: "Lightweight shirt and shorts co-ord in a breathable cotton-linen blend, built for warm-weather layering.",
-  //   images: [img(PALETTE_B, "Beige+Coord+01", "121110"), img(PALETTE_D, "Beige+Coord+02", "121110")],
-  //   badge: "",
-  //   stock: 16,
-  //   dateAdded: "2026-04-19"
-  // },
-  // {
-  //   id: 27,
-  //   name: "Korean Relaxed Co-ord",
-  //   brand: "Studio Mù",
-  //   category: "Co-ords",
-  //   price: 3099,
-  //   oldPrice: 3599,
-  //   discount: 14,
-  //   rating: 4.6,
-  //   reviews: 49,
-  //   sizes: ["S", "M", "L", "XL"],
-  //   colors: ["Charcoal"],
-  //   description: "Relaxed overshirt and trouser co-ord in a soft brushed fabric — a full look designed to be worn together or separated.",
-  //   images: [img(PALETTE_A, "Relaxed+Coord+01"), img(PALETTE_C, "Relaxed+Coord+02")],
-  //   badge: "",
-  //   stock: 9,
-  //   dateAdded: "2026-03-25"
-  // },
-  // {
-  //   id: 28,
-  //   name: "Minimal Fashion Cap",
-  //   brand: "Hanlim Atelier",
-  //   category: "Accessories",
-  //   price: 799,
-  //   oldPrice: 999,
-  //   discount: 20,
-  //   rating: 4.5,
-  //   reviews: 112,
-  //   sizes: ["One Size"],
-  //   colors: ["Black", "Beige"],
-  //   description: "Six-panel cap in brushed cotton twill with a low profile crown and an embroidered eyelet vent — a quiet finishing piece.",
-  //   images: [img(PALETTE_C, "Fashion+Cap+01"), img(PALETTE_A, "Fashion+Cap+02")],
-  //   badge: "",
-  //   stock: 40,
-  //   dateAdded: "2026-01-12"
-  // },
-  // {
-  //   id: 29,
-  //   name: "Premium Casual Belt",
-  //   brand: "Studio Mù",
-  //   category: "Accessories",
-  //   price: 899,
-  //   oldPrice: 0,
-  //   discount: 0,
-  //   rating: 4.3,
-  //   reviews: 27,
-  //   sizes: ["S/M", "L/XL"],
-  //   colors: ["Black", "Brown"],
-  //   description: "Full-grain leather belt with a brushed matte gold buckle. A refined everyday accessory built to age well.",
-  //   images: [img(PALETTE_B, "Casual+Belt+01", "121110"), img(PALETTE_D, "Casual+Belt+02", "121110")],
-  //   badge: "",
-  //   stock: 35,
-  //   dateAdded: "2026-02-20"
-  // },
-  // {
-  //   id: 30,
-  //   name: "Korean Streetwear Crossbody Bag",
-  //   brand: "Lóng Wear",
-  //   category: "Accessories",
-  //   price: 1599,
-  //   oldPrice: 1999,
-  //   discount: 20,
-  //   rating: 4.7,
-  //   reviews: 71,
-  //   sizes: ["One Size"],
-  //   colors: ["Black"],
-  //   description: "Compact technical crossbody bag in water-resistant nylon with multiple zip compartments and an adjustable strap.",
-  //   images: [img(PALETTE_C, "Crossbody+Bag+01"), img(PALETTE_A, "Crossbody+Bag+02")],
-  //   badge: "NEW",
-  //   stock: 23,
-  //   dateAdded: "2026-07-08"
-  // }
+
+  // =====================================================
+  // ADDITIONAL T-SHIRTS — UNIQUE PRODUCT NAMES
+  // IMAGES 7 AND 9 TO 20
+  // =====================================================
+
+  {
+    id: 15,
+    name: "Urban Monochrome Graphic Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A modern graphic tee designed for a stylish everyday streetwear look.",
+    images: ["assets/images/T-shirt7.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 16,
+    name: "Contemporary Mandarin Collar Shirt",
+    brand: "Sadiya Fashions",
+    category: "Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A smart casual shirt offering a clean and contemporary look for everyday wear.",
+    images: ["assets/images/T-shirt8.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 17,
+    name: "Retro Street Graphic Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A retro-inspired graphic tee that brings personality to your casual wardrobe.",
+    images: ["assets/images/T-shirt9.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 18,
+    name: "Essential Everyday Cotton Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A comfortable everyday cotton tee with a versatile casual style.",
+    images: ["assets/images/T-shirt10.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 19,
+    name: "Urban Classic Printed Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A printed streetwear tee made for effortless everyday styling.",
+    images: ["assets/images/T-shirt11.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 20,
+    name: "Korean Minimal Streetwear Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A minimal Korean-inspired tee with a relaxed and contemporary feel.",
+    images: ["assets/images/T-shirt12.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 21,
+    name: "Bold Statement Graphic Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A bold graphic tee that adds a distinctive touch to your streetwear collection.",
+    images: ["assets/images/T-shirt13.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 22,
+    name: "Relaxed Fit Premium Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A relaxed-fit tee designed to deliver comfort with a modern casual silhouette.",
+    images: ["assets/images/T-shirt14.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 23,
+    name: "Contemporary Printed Street Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A contemporary printed tee for a fresh and expressive everyday look.",
+    images: ["assets/images/T-shirt15.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 24,
+    name: "Classic Oversized Graphic Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A classic oversized graphic tee made for relaxed street-inspired outfits.",
+    images: ["assets/images/T-shirt16.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 25,
+    name: "Modern Minimalist Cotton Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A minimalist cotton tee offering a clean look and easy everyday comfort.",
+    images: ["assets/images/T-shirt17.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 26,
+    name: "Premium Urban Style Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A premium-inspired streetwear tee for versatile everyday outfits.",
+    images: ["assets/images/T-shirt18.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 27,
+    name: "Everyday Street Fashion Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A versatile street fashion tee designed for comfortable daily styling.",
+    images: ["assets/images/T-shirt19.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  },
+  {
+    id: 28,
+    name: "Signature Graphic Streetwear Tee",
+    brand: "Sadiya Fashions",
+    category: "T-Shirts",
+    price: 499,
+    oldPrice: 999,
+    discount: 50,
+    rating: 0,
+    reviews: 0,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [],
+    description: "A signature-inspired graphic tee to complete your modern streetwear look.",
+    images: ["assets/images/T-shirt20.jpeg"],
+    badge: "50% OFF",
+    stock: 10,
+    dateAdded: "2026-11-18"
+  }
 ];
 
 /* ---------------- Shared product helpers ---------------- */
@@ -580,11 +545,14 @@ function getProductById(id) {
 
 function getRelatedProducts(product, count) {
   count = count || 4;
+
   return products
     .filter(p => p.id !== product.id && p.category === product.category)
     .slice(0, count)
     .concat(
-      products.filter(p => p.id !== product.id && p.category !== product.category)
+      products.filter(
+        p => p.id !== product.id && p.category !== product.category
+      )
     )
     .slice(0, count);
 }
@@ -601,6 +569,7 @@ function getBrands() {
 
 function getNewArrivals(count) {
   count = count || 8;
+
   return [...products]
     .sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded))
     .slice(0, count);
